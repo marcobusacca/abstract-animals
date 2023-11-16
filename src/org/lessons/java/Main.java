@@ -5,8 +5,6 @@ import org.lessons.java.pojo.Cane;
 import org.lessons.java.pojo.Delfino;
 import org.lessons.java.pojo.Passerotto;
 import org.lessons.java.pojo.abs.Animale;
-import org.lessons.java.pojo.inter.INuotante;
-import org.lessons.java.pojo.inter.IVolante;
 
 public class Main {
 
@@ -38,33 +36,6 @@ public class Main {
 			a.verso();
 			System.out.print("Mangia: ");
 			a.mangia();
-		}
-		
-		System.out.println("\n-----------------------\n");
-		
-		IVolante[] volanti = new IVolante[2];
-		volanti[0] = p1;
-		volanti[1]= a1;
-		
-		for(int x = 0; x < volanti.length; x++) {
-			
-			IVolante v = volanti[x];
-			
-			v.faiVolare();
-		}
-		
-		
-		System.out.println("\n-----------------------\n");
-		
-		INuotante[] nuotanti = new INuotante[2];
-		nuotanti[0] = c1;
-		nuotanti[1]= d1;
-		
-		for(int x = 0; x < nuotanti.length; x++) {
-			
-			INuotante n = nuotanti[x];
-			
-			n.faiNuotare();
 		}
 	}
 }
