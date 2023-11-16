@@ -5,6 +5,8 @@ import org.lessons.java.pojo.Cane;
 import org.lessons.java.pojo.Delfino;
 import org.lessons.java.pojo.Passerotto;
 import org.lessons.java.pojo.abs.Animale;
+import org.lessons.java.pojo.inter.INuotante;
+import org.lessons.java.pojo.inter.IVolante;
 
 public class Main {
 
@@ -37,5 +39,11 @@ public class Main {
 			System.out.print("Mangia: ");
 			a.mangia();
 		}
+	}
+	public static void faiVolare(IVolante volante) {
+		volante.vola();
+	}
+	public static void faiNuotare(INuotante nuotante) {
+		nuotante.nuota();
 	}
 }
