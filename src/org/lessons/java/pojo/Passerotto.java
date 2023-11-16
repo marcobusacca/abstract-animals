@@ -1,8 +1,9 @@
 package org.lessons.java.pojo;
 
 import org.lessons.java.pojo.abs.Animale;
+import org.lessons.java.pojo.inter.IVolante;
 
-public class Passerotto extends Animale {
+public class Passerotto extends Animale implements IVolante {
 	
 	public static final String VERSO = "Chirp";
 	public static final String CIBO = "Semini";
@@ -20,6 +21,15 @@ public class Passerotto extends Animale {
 	@Override
 	public void mangia() {
 		System.out.println(CIBO);
+	}
+	
+	
+	public void vola() {
+		System.out.println(getNome() + " dice: sto volando!");
+	}
+	@Override
+	public void faiVolare() {
+		vola();
 	}
 	
 	
